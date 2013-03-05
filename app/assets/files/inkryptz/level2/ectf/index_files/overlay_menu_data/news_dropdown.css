@@ -1,0 +1,177 @@
+.news-dropdown
+{
+float:left;
+width:984px;
+height:auto;
+}
+.dropdown-outer
+{
+float:left;
+width:962px;
+padding:11px;
+background-color:#b30f0e;
+}
+.dropdown-links
+{
+float:left;
+width:962px;
+text-align:left;
+font:normal 12px Arial, Helvetica, sans-serif;
+color:#FFFFFF;
+}
+.dropdown-links span
+{
+font:normal 12px Arial, Helvetica, sans-serif;
+color:#FFFFFF;
+padding:0 4px 0 4px;
+}
+.dropdown-links a
+{
+font:normal 12px Arial, Helvetica, sans-serif;
+color:#FFFFFF;
+text-decoration:none;
+line-height:18px;
+}
+.dropdown-links a:hover
+{
+text-decoration:underline;
+}
+.dropdown-inner
+{
+float:left;
+width:922px;
+margin-top:10px;
+padding:20px;
+background-color:#FFFFFF;
+}
+.top-stories-cont
+{
+float:left;
+width:440px;
+border-right:1px solid #cccccc;
+}
+.section-title
+{
+float:left;
+width:100%;
+text-align:left;
+}
+.section-title a 
+{
+font:bold 14px Arial, Helvetica, sans-serif;
+color:#42474b;
+text-decoration:none;
+text-transform:uppercase;
+}
+.section-links
+{
+float:left;
+width:100%;
+}
+.section-links ul
+{
+float:left;
+width:100%;
+margin:0;
+padding:0;
+list-style-image:none;
+list-style-type:none;
+list-style-position:outside;
+}
+.links
+{
+float:left;
+width:215px;
+text-align:left;
+margin:0;
+padding-top:20px;
+list-style-type:none;
+}
+.links a img
+{
+float:left;
+margin-right:10px;
+border:1px solid #000000;
+}
+.brf-description
+{
+float:left;
+width:100px;
+text-align:left;
+}
+.brf-description a
+{
+font:bold 12px Arial, Helvetica, sans-serif;
+color:#000000;
+text-decoration:none;
+line-height:16px;
+}
+.brf-description a:hover
+{
+text-decoration:underline;
+}
+.hspace-20
+{
+float:left;
+width:100%;
+height:20px;
+}
+.hspace-5
+{
+float:left;
+width:100%;
+height:5px;
+font-size:1px;
+margin:0; padding:0;
+}
+.editor-cont
+{
+float:left;
+width:220px;
+padding-left:20px;
+border-left:1px solid #cccccc;
+}
+.trending-cont
+{
+float:left;
+width:210px;
+padding-left:20px;
+}
+.bullet-links
+{
+float:left;
+width:98%;
+}
+.bullet-links ul
+{
+list-style-position:outside;
+margin: 10px 0 0 15px;
+padding:0;
+}
+.bullet-links li 
+{
+list-style-type: square;
+color:#7a7777;
+text-align:left;
+line-height:18px;
+font-size:12px;
+margin:0;
+padding:0;
+}
+.bullet-links li a 
+{
+font:bold 12px Arial, Helvetica, sans-serif;	
+color:#000000; 
+text-decoration:none;
+}
+.bullet-links li a:hover
+{
+text-decoration:underline;
+}
+.dropdown-shadow
+{
+float:left;
+width:984px;
+background:url(http://im.sify.com/movies/images/dropdown_shadow2011.png);
+height: 34px
+}

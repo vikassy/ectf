@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  level_id: 1
+  hacked_id: 1
+  type: false
+
+two:
+  user_id: 1
+  level_id: 1
+  hacked_id: 1
+  type: false

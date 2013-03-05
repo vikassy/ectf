@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /p03920s090asa9.html

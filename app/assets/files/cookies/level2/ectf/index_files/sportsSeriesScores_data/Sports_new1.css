@@ -1,0 +1,75 @@
+.sponsor{background-image: url(http://scores.sify.com/match/images/sponsor1.gif);background-repeat: no-repeat;background-position: left top;height: 60px;}
+.sponsor1{background-image: url(http://sifyimg.edgesuite.net/scores.sify.com/match/images/sponsor1a.gif);background-repeat: no-repeat;background-position: left top;height: 134px;}
+.com_verdana{font-family: verdana;}
+.com_arial12{font-family: Arial;}
+.com_size11{font-size: 11px;}
+.com_size16{font-size: 16px;}
+.com_size12{font-size: 12px;}
+.com_size14{font-size: 14px;}
+.com_white{color: #FFFFFF;}
+.com_black{color: #000000;}
+.com_gray{color: #5F5F5F;}
+.com_blue{color: #0000FF;}
+.com_height{line-height: 18px;}
+.com_green{color: #2E6309;}
+.com_border1{border: 1px solid #CBEA9C;}
+.sports_tab1{background-image: url(http://sifyimg.edgesuite.net/scores.sify.com/match/images/sports_tab1.gif);background-repeat: no-repeat;background-position: center center;height: 29px;width: 79px;}
+.sports_tab2{background-image: url(http://sifyimg.edgesuite.net/scores.sify.com/match/images/sports_tab2.gif);background-repeat: no-repeat;background-position: left top;width: 71px;}
+.refresh{width: 130px;height: auto;}
+.center_div_three_commentary {width:490px;float:left;border-bottom:1px solid #CBEA9C;margin-top:0px; margin-left: 5px; line-height:17px;}
+.center_div_four1 {width:490px;float:left;margin-top:0px; line-height:17px; vertical-align:top;}
+.center_div_three1 {width:490px;float:left;border-bottom:1px solid #654654;margin-top:10px; margin-left: 5px; line-height:17px;}
+.center {padding: 5px;}
+.center_div {padding-left: 5px;}
+.center_div p{margin-left:10px; margin-top:0px;}
+.center_div a{ color:#606c72; font-weight:bold;}
+.center_div a strong{ color:#c00; font-weight:bold;}
+.center_div_three {width:490px;float:left;border-bottom:1px solid #0094E1;margin-top:10px; margin-left: 5px; line-height:17px;}
+.center_div_three p{text-align:justify;}
+.center_div_three a{ color:#777;}
+.center_div_three td{ padding-left:0px;}
+.center_div_four {width:490px;float:left;border-bottom:1px solid #0094E1;margin-top:0px; margin-left: 5px; line-height:17px; background:#DBE1ED;}
+.center_div_four p{margin:10px;}
+.center_div_four a{ color:#000; font-weight:bold;}
+.schedule1 {width: 85px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.schedule2 {width: 85px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.schedule3{width: 279px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.sc1 {width: 85px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.sc2 {width: 85px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.sc3{width: 279px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.sc5 {width: 85px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 45px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DBF2BA;padding-top: 3px;padding-bottom: 3px;background-color: #FFFFFF;}
+.sc6 {width: 85px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 45px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DBF2BA;background-color: #FFFFFF;margin-right: auto;margin-left: auto;margin-top: 0px;margin-bottom: 0px;padding-top: 3px;padding-bottom: 3px;padding-right: 0px;}
+.sc7{width: 279px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 45px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DBF2BA;background-color: #FFFFFF;padding-top: 3px;padding-bottom: 3px;}
+.score1{width: 488px;}
+.sc15 {width: 80px;float: left;font-family: Arial;font-size: 12px;color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DBF2BA;padding-top: 10px;padding-bottom: 10px;background-color: #FFFFFF;}
+.sc17{width: 375px;float: left;font-family: Arial;font-size: 12px;color: #000000;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #DBF2BA;background-color: #FFFFFF;padding-top: 10px;padding-bottom: 10px;}
+.schedule11 {width: 80px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.schedule13{width: 380px;float: left;font-family: Arial;font-size: 12px;color: #000000;height: 20px;border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #FFFFFF;background-color: #DBF2BA;}
+.arial14,.arial11,.arial12,.arial12-white,.arial12blue,.arial11-gary,.arial12-black,.arial26,.arial14a{ font-family: Arial;	font-size: 14px;font-weight: normal;color: #0066cc;}
+.arial11{font-size: 11px;color: #000000;}
+.arial12,.arial11-gary{font-size: 12px;color: #606060;text-decoration:none;}
+.arial11-gary{font-size: 11px;}
+.arial12-white{font-size: 12px;color: #ffffff;text-decoration:none;}
+.arial12blue{font-size: 12px;}
+.arial12-black{font-size: 12px;color: #000000;}
+.arial26{font-size: 26px;color: #00177c;}
+.arial14a{font-size: 14px;color: #00177c;}
+.bg_txt{
+ background-image: url(http://sifyimg.edgesuite.net/scores.sify.com/match/images/bg_tile.jpg);
+ background-repeat: no-repeat;
+ background-position: left top;
+}
+.verdana18,.verdana10bl{font-family: Verdana, Arial, Helvetica, sans-serif;	font-size: 12px;font-weight: normal;color: #000000;text-decoration: none;}
+.verdana10bl{font-size: 10px;}
+.verdana18{font-size: 18px;color: #FF0000;}
+.arial12black{font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;color: #1B1B1B;	line-height: normal;}
+.style1 {color: #0000FF;font-weight: bold;}
+.banner2{background-image: url(http://sifyimg.edgesuite.net/scores.sify.com/match/images/banner2.jpg);	background-repeat: no-repeat;	background-position: left top;}
+/*For IPL summary slot */
+.arialgreen-b {font-family: Arial, Helvetica, sans-serif;font-size: 15px;font-weight: bold;color: #2d6206;text-decoration: none;}
+.ariallghtgreen1-n {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #4c5a02;text-decoration: none;}
+.arial12blue-n {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;color: #0000FF;text-decoration: none;}
+.arial12blue-b {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #0000FF;text-decoration: none;}
+.arial12black-b {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #000000;text-decoration: none;}
+.arial12black-n {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;color: #000000;text-decoration: none;}
+.matrimony-bg {background-image: url(http://sifyimg.edgesuite.net/scores.sify.com/match/images/vadofone.gif);background-repeat: no-repeat;background-position: left top;height: 236px;}

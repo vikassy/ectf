@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /o33ewe2122ddx31.html

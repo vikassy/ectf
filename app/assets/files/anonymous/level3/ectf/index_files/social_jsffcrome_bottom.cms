@@ -1,0 +1,208 @@
+var ogtype='0';
+		ogtype=parseInt(ogtype);
+		
+		var accessToken="";
+				var allimglazy;
+				function invokeToiReader()
+				{
+				
+				try{
+					if(Get_Ckie('Fbsecuritykey')!=null)
+					{
+						accessToken=Get_Ckie('Fbsecuritykey');
+						var mId = Get_Ckie('Fboauthid');
+						var mName = Get_Ckie('fbookname');
+						try
+						{
+							if(accessToken != null)
+							{
+								var loginEmail = Get_Ckie('FaceBookEmail');
+								if(loginEmail != null)
+								{
+									var apisetOn = "/fbpermsupd.cms?channel=toi&email="+loginEmail+"&permissionstatus=1";
+									var apisetOff = "/fbpermsupd.cms?channel=toi&email="+loginEmail+"&permissionstatus=0";
+									var getapi = "/fbpermsget.cms?channel=toi&email="+loginEmail;
+									var setting = Get_Ckie('usrsetting');
+									if(setting != null)
+									{
+										if(setting == 1)
+										{
+											Set_Ckie("usrsetting","1",0,"/",".indiatimes.com","");
+											socialOn();
+										}
+										else if(setting == 0)
+										{
+											Set_Ckie("usrsetting","0",0,"/",".indiatimes.com","");
+											socialOff();
+										}
+									}
+									else if(setting == null)
+									{
+										$.post(getapi, function(data){
+											var dataval = $("input", data).val();
+											if(dataval == 2)
+											{
+												$.post(apisetOn, function(data) {
+													var Isdataon = $("input", data).val();
+													if(Isdataon != null && Isdataon == 1)
+													{
+														Set_Ckie("usrsetting","1",0,"/",".indiatimes.com","");
+														socialOn();
+													}
+												});
+											}
+											else if(dataval == 1)
+											{
+												Set_Ckie("usrsetting","1",0,"/",".indiatimes.com","");
+												socialOn();
+											}
+											else if(dataval == 0)
+											{
+												Set_Ckie("usrsetting","0",0,"/",".indiatimes.com","");
+												socialOff();
+											}
+											else if(dataval == -2)
+											{
+												//alert('Unknown exception error! Please retry.');
+											}
+										});
+									}
+
+								}
+								
+								
+									var instalfrnd = 0;
+									var IsRead = 0;
+									var nonread = 0;
+
+									var mimg = "<img style='height:50px;width:50px;' src='https://graph.facebook.com/"+mId+"/picture'/><div class='fb-symble'></div>"
+									$('#social_mimg').html(mimg);
+									$('#MemberName').html((mName.replace('"',"")).replace('"',""));
+									
+									var FBUrl = "https://graph.facebook.com/me/friends?fields=installed&access_token="+accessToken;
+									if(FBUrl.indexOf("fb_xd_fragment") == -1){
+									$.getJSON(FBUrl,function(data){	
+										  $.each(data.data, function(i,data){ 
+											if(data.installed ==true)
+											{
+												instalfrnd++;
+												var frndId = data.id;
+												var at_recent_activity="";
+												if(ogtype==0)
+												{
+													at_recent_activity = "https://graph.facebook.com/"+frndId+"/news.reads?access_token="+accessToken+"&amp;offset=0&amp;limit=2";
+												}
+												else if(ogtype==1){
+													at_recent_activity = "https://graph.facebook.com/"+frndId+"/nstimesgroup:review?access_token="+accessToken+"&amp;offset=0&amp;limit=2";
+												}
+												else {
+												}
+												$.getJSON(at_recent_activity,function(data2) {	
+													if(data2.data !='')
+													{
+														IsRead++;
+														if(IsRead<6)
+														{
+															var div_data ="<div id='profile_"+data.id+"' onmouseover='javascript:showthepart(this,"+data.id+");' onclick='javascript:showOnClock(this,"+data.id+");' class='ppic-block'><img class='p-img' style='height:50px;width:50px;' src='https://graph.facebook.com/"+data.id+"/picture'></img></div>"
+															$(div_data).appendTo("#p-container");
+														}
+														else
+														{
+															var div_data ="<div id='profile_"+data.id+"' onmouseover='javascript:showthepart(this,"+data.id+");' onclick='javascript:showOnClock(this,"+data.id+");' class='ppic-block'><img class='p-img' style='height:50px;width:50px;' _src='https://graph.facebook.com/"+data.id+"/picture'></img></div>"
+															$(div_data).appendTo("#p-container");
+														}												
+													}
+													else
+													{
+														nonread++;
+														if(IsRead<6)
+														{
+															var div_data ="<div id='profile_"+data.id+"' onmouseover='javascript:showthepart(this,"+data.id+");' onclick='javascript:showOnClock(this,"+data.id+");' class='ppic-block'><img class='p-img' style='height:50px;width:50px;' src='https://graph.facebook.com/"+data.id+"/picture'></img></div>"
+															$(div_data).appendTo("#p-buffer");
+														}
+														else
+														{
+															var div_data ="<div id='profile_"+data.id+"' onmouseover='javascript:showthepart(this,"+data.id+");' onclick='javascript:showOnClock(this,"+data.id+");' class='ppic-block'><img class='p-img' style='height:50px;width:50px;' _src='https://graph.facebook.com/"+data.id+"/picture'></img></div>"
+															$(div_data).appendTo("#p-buffer");
+														}
+													}
+													if(instalfrnd == nonread+IsRead)
+													{
+														
+													  var restfrnd = $('#p-buffer').html();
+													  $(restfrnd).appendTo("#p-container");
+
+													  var AdFrnd = "<div id='ppic-ad' class='ppic-block'><span class='invite'><a class='profileimg' onmouseover='javascript:hideall();' onClick='javascript:appreqest();' role='button' title='Invite Freinds'><span class='action'></span></a></span></div>";
+													  $(AdFrnd).appendTo("#p-container");
+
+													  $('#p-buffer').html('');
+
+													  $('#social_img_loading').hide();
+													  $('#social_access').show();
+					  							  	  $('#frnd_counter').show();
+													}
+												});
+											 }
+										  });
+
+										  $('#total-frnd').html(' of '+instalfrnd);
+										  //allimglazy = $("img[class^='p-img']");
+										  if(instalfrnd > 5)
+										  {
+											  $('#total-frnd').html(instalfrnd);
+											  $('#frnd_counter').show();
+											  $('#PB_Left').attr('class','left_arrow_inactive');
+										  }
+										  else
+										  {
+											  $('#total-frnd').html(instalfrnd);
+											  $('#shown-frnd').html(instalfrnd);
+											  $('#PB_Left').attr('class','left_arrow_inactive');
+											  $('#PB_Right').attr('class','right_arrow_inactive');
+											  $('#frnd_counter').show();
+										  }
+
+											$('#social_promo').hide();
+											$('#loginbanner').hide();
+											$('#offline_msg').hide();
+											$('#online_msg').show();
+											$('#social_img_loading').show();
+
+										  if(instalfrnd == 0)
+										  {
+											var AdFrnd = "<div id='ppic-ad' class='ppic-block'><span class='invite'><a class='profileimg' onClick='javascript:appreqest();' role='button' title='Invite Freinds'><span class='action'></span></a></span></div>"
+											$(AdFrnd).appendTo("#p-container");
+										  	$('#social_img_loading').hide();
+											$('#social_access').show();
+										  	$('#frnd_counter').hide();
+										  }
+
+								    });
+								  
+								}
+							}
+						}
+						catch(ex)
+						{
+							//alert(ex);
+						}
+					
+					}
+					else
+					{
+						$('#social_promo').show();
+						$('#social_access').hide();
+						$('#loginbanner').show();
+						$('#offline_msg').show();
+						$('#online_msg').hide();
+					}
+					
+				}
+				catch(ex){
+					//alert(ex);
+				}
+		}
+		invokeToiReader();
+
+
+		

@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /kdcdcm98dd989d23.html

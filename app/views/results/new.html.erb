@@ -1,0 +1,21 @@
+<div id="ectf" style="margin-left: -150px;">
+<div id="head">Submit keys</div><br />
+<div id="subhead" style="text-align: center;">
+	<% flash.each do |name, msg| %>
+  <% if msg.is_a?(String) %>
+  	<div class="home">
+    <div class="alert alert-<%= name == :notice ? "success" : "error" %> span7"> 
+      <%= content_tag :div, msg, :id => "flash_#{name}" %>
+    </div>
+</div>
+  <% end %>
+<% end %>
+<%= form_for(@result) do |f| %>
+	<%= f.label :hacked_id , "Hacked account" %>
+	<%= f.collection_select(:hacked_id, User.all, :id, :name) %><br />
+	<%= f.label :answer , "Key" %>
+	<%= f.text_field :answer %><br />
+	<%= f.submit "Submit" %>
+	<% end %>
+</div><br />
+</div>

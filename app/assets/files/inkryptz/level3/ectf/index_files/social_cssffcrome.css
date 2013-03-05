@@ -1,0 +1,377 @@
+.y-block
+					{
+					    background: -moz-linear-gradient(center top , #EBEBEB 0pt, #FBFBFB 100%) repeat scroll 0 0 transparent;
+						background: -o-linear-gradient(top,#EBEBEB 0,#FBFBFB 100%);
+						background: -ms-linear-gradient(top,#EBEBEB 0,#FBFBFB 100%);
+						background:#ebebeb;
+						background-image: -webkit-linear-gradient(top, #EBEBEB 0px, #FBFBFB 100%);
+
+						border: 1px solid #DADADA!important;
+					    border-radius: 5px 5px 5px 5px;
+						border-radius: 5px;
+						-webkit-text-size-adjust: none;
+
+					    margin-bottom: 10px;
+					    padding: 5px 0;
+						height:80px;
+					}
+					.invite 
+					{
+						background: url("") no-repeat scroll 0 -200px transparent !Impotant;
+						display: block;
+						position: relative;
+					}
+					.y-desc
+					{
+	
+					}
+					.right_arrow 
+					{
+						background: url(/photo/12505258.cms) left top no-repeat;
+						background-position: 0 0px;
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 443px;
+						top: 6px;
+					}
+					.left_arrow 
+					{
+						background: url(/photo/12505252.cms) left top no-repeat;
+						background-position: 0 0px;
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 419px;
+						top: 6px;
+						cursor:pointer;
+					}
+					.right_arrow2 
+					{
+						background: url(/photo/12505258.cms) left top no-repeat;
+						background-position: 0 0px;
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 443px;
+						top: 6px;
+					}
+					.left_arrow2 
+					{
+						background: url(/photo/12505252.cms) left top no-repeat;
+						background-position: 0 0px;
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 419px;
+						top: 6px;
+					}
+					.right_arrow3 
+					{
+						background: url(/photo/12505258.cms) left top no-repeat;
+						background-position: 0 0px;
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 443px;
+						top: 6px;
+					}
+					.left_arrow3 
+					{
+						background: url(/photo/12505252.cms) left top no-repeat;
+						background-position: 0 0px;
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 419px;
+						top: 6px;
+					}
+					.left_arrow_inactive 
+					{
+						background: url(/photo/12505221.cms);
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 419px;
+						top: 6px;
+					}
+					.right_arrow_inactive
+					{
+						background: url(/photo/12505250.cms);;
+						background-repeat: no-repeat;
+						height: 26px;
+						width: 15px;
+						float: left;
+						left: 443px;
+						top: 6px;
+					}
+					.bd
+					{
+					    float: left;
+					    padding-left: 35px;
+					    width: 440px;
+					}
+					.bd2
+					{
+					   padding-left: 0px;
+					    width: 280px;
+						border-bottom:1px solid #7C7C7C;
+						border-top:1px solid #7C7C7C;
+					}
+					.ft
+					{
+					    background: none repeat scroll 0 0 #D1D6E1;
+					    border-radius: 5px 5px 5px 5px;
+					    margin: 13px 8px 3px 530px;
+					    padding-top: 13px;
+					    text-align: center;
+						height:45px;
+					}
+					
+					.popup-block
+					{
+						width:300px;
+						overflow:hidden;
+						float:left;
+						height:85px;
+					}
+					.p-container
+					{						
+						height:64px;
+						position: relative;						
+						left: 0px;
+						top:10px;
+						width: 40000px;
+						float:left;
+					}
+					.ppic-block
+					{
+						height:60px;
+						width:60px;
+						float:left;
+						padding:2px 0px 2px 0px;
+						cursor:pointer;
+					}
+					.ppic-block2
+					{
+						border-radius: 7px 7px 0 0;
+						padding-bottom: 0;
+						position: absolute;
+						border: 7px solid rgba(0, 0, 0, 0.2);
+					}
+					.p-img
+					{
+						height:50px;
+						width:50px;
+		
+					}
+					.start
+					{
+					    color: #5F739B;
+					    font-size: 167%;
+					    text-shadow: 0 1px #FFFFFF;
+					}
+					#h3
+					{
+						line-height: 0px;
+						font-size: 100%;
+					}
+					.show-content
+					{
+						background:#ebebeb;
+						background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+						border-radius: 1px 1px 1px 1px;
+						padding: 1px;
+						width:425px;
+						margin-top:0px;
+						position:relative;
+						top:315px;
+						left:3px;
+						display:none;
+						z-index:2147483547;
+					}
+					.show-content0
+					{
+						background:#ebebeb;
+						background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+						border-radius: 1px 1px 1px 1px;
+						padding: 1px;
+						width:300px;
+						margin-top:0px;
+						position:relative;
+						top:315px;
+						left:3px;
+						display:none;
+						z-index:2147483547;
+					}
+					.show-content2
+					{
+						background:#ebebeb;
+						background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+						border-radius: 1px 1px 1px 1px;
+						padding: 2px;
+						width:100px;
+						margin-top:0px;
+						position:absolute;
+						top:309px;
+						left:714px;
+						display:none;
+						z-index:2147483547;
+					}
+					.show-content3
+					{
+						background:#ebebeb;
+						background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+						border-radius: 1px 1px 1px 1px;
+						padding: 2px;
+						width:200px;
+						margin-top:0px;
+					    position: absolute;
+					    top: 309px;
+						left: 780px;
+						display:none;
+						z-index:2147483547;
+					}
+					.invite
+					{
+						background: url("/photo/11500939.cms") no-repeat scroll 0 -200px transparent;
+					    display: block;
+					    position: relative;
+					}
+					a.profileimg
+					{
+						display: block;
+						height: 50px;
+						width: 50px;
+					}
+					.action
+					{
+						background: url("/photo/11500939.cms") no-repeat scroll 0 -640px transparent;
+						bottom: 0;
+						display: block;
+						height: 17px;
+						overflow: hidden;
+						position: absolute;
+						right: 0;
+						text-indent: -1000px;
+						width: 17px;
+						left: 33px;
+					}
+					.heading
+					{
+						font-weight:bold;
+						font-size:10px;
+						padding-bottom:3px;
+					}
+					#ol, ul 
+					{
+						#list-style: none;
+					}
+					#li
+					{
+						#display:inline;
+					}
+					.btn-NP
+					{
+						width: 30px;
+						margin-top: -2px;
+						float: right;
+						height: 18px;
+					}
+					.btn-NP2
+					{
+						height: 20px;
+						float:right;
+					}
+					#slidingpanel
+					{
+						width: 300px;
+						float: left;
+						padding: 0;
+						margin: 0px !Important;
+						z-index: 5000;
+					}
+					#slidebox
+					{
+						width: 283px !Important;
+						position: relative;
+						overflow: hidden;
+						padding: 10px 5 0 10px;
+						border: 1px dotted #E7DFF7;
+						background: url(/photo/6706225.cms) repeat-x #E7DFF7;
+						height: 76px;
+					}
+					.MS_Contents
+					{
+						width:300px; height:100px;float:left;color:gray;padding-left:7px;
+					}
+					.ppic-cover
+					{
+						Position: absolute;
+						top: 138px;
+						left: 81px;
+						height: 58px;
+						width: 54px;
+						background-color: transparent;
+						border-radius: 2px 2px 0 0;
+						border: 2px solid rgba(0, 0, 0, 0.2);
+						border-bottom: 0px solid white;
+						z-index:2147483647;
+						display:none;
+					}
+					.ppic-cover2
+					{
+						height: 58px;
+						width: 54px;
+						background-color: transparent;
+						border-radius: 2px 2px 0 0;
+						border: 2px solid rgba(0, 0, 0, 0.2);
+						border-bottom: 0px solid white;
+						z-index: 5005;
+						margin-top:-85px;
+						margin-left:-10px;
+					}
+					.show-act-popup
+					{
+						background-image:url('/photo/9719649.cms');
+						background-repeat: no-repeat;
+						background-position: -8px -601px;
+						position: relative;
+						padding-left:10px;
+					}
+					.act-content-up
+					{
+						background-image:url('/photo/12505293.cms');
+						background-position: 3px 6px;
+						background-repeat: no-repeat;
+						position: relative;
+						padding-left:10px;
+					}
+					.social-on
+					{
+						padding-right: 9px;
+						background: url('/photo/12341570.cms') no-repeat -42px -116px;
+						position: relative;
+					}
+					.social-off
+					{
+						padding-right: 9px;
+						background: url('/photo/12341570.cms') no-repeat -42px -156px;
+						position: relative;
+					}
+					.fb-symble
+					{
+						background: url('/photo/12341570.cms') no-repeat -35px 0;
+						left: 35px;
+						height: 15px;
+						position: relative;
+						top: -17px;
+						width: 15px;
+					}

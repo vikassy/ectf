@@ -1,0 +1,57 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_radlink = new Object(); 
+google_radlink.n = 1; 
+google_radlink.url = ""; 
+google_radlink.line1 = "Sports Trophy"; 
+google_radlink.term = "Sports Trophy"; 
+google_radlink.url_escaped_term = "Sports+Trophy"; 
+google_radlink.radlink_token = "ChBRE_dwAAsTAgrirULZAFlCEg1TcG9ydHMgVHJvcGh5GgiFJqph7bprXygBUhMIxOaM0-6ktQIVrp7iCh2TDwDB"; 
+google_radlinks[0] = google_radlink; 
+google_radlink = new Object(); 
+google_radlink.n = 2; 
+google_radlink.url = ""; 
+google_radlink.line1 = "Sports Scores"; 
+google_radlink.term = "Sports Scores"; 
+google_radlink.url_escaped_term = "Sports+Scores"; 
+google_radlink.radlink_token = "ChBRE_dwAAsTDwrirULZAFlCEg1TcG9ydHMgU2NvcmVzGgi_6KM1RmUcaSgBUhMIxOaM0-6ktQIVrp7iCh2TDwDB"; 
+google_radlinks[1] = google_radlink; 
+google_radlink = new Object(); 
+google_radlink.n = 3; 
+google_radlink.url = ""; 
+google_radlink.line1 = "Sports News Cricket"; 
+google_radlink.term = "Sports News Cricket"; 
+google_radlink.url_escaped_term = "Sports+News+Cricket"; 
+google_radlink.radlink_token = "ChBRE_dwAAsTEgrirULZAFlCEhNTcG9ydHMgTmV3cyBDcmlja2V0GgidvigQoqMR_CgBUhMIxOaM0-6ktQIVrp7iCh2TDwDB"; 
+google_radlinks[2] = google_radlink; 
+google_radlink = new Object(); 
+google_radlink.n = 4; 
+google_radlink.url = ""; 
+google_radlink.line1 = "Sports Games to Play"; 
+google_radlink.term = "Sports Games to Play"; 
+google_radlink.url_escaped_term = "Sports+Games+to+Play"; 
+google_radlink.radlink_token = "ChBRE_dwAAsTFgrirULZAFlCEhRTcG9ydHMgR2FtZXMgdG8gUGxheRoICYjcuK8Oxy0oAVITCMTmjNPupLUCFa6e4godkw8AwQ"; 
+google_radlinks[3] = google_radlink; 
+google_radlink = new Object(); 
+google_radlink.n = 5; 
+google_radlink.url = ""; 
+google_radlink.line1 = "Sports Soccer"; 
+google_radlink.term = "Sports Soccer"; 
+google_radlink.url_escaped_term = "Sports+Soccer"; 
+google_radlink.radlink_token = "ChBRE_dwAAsTGQrirULZAFlCEg1TcG9ydHMgU29jY2VyGgjbstjBkDvJ9CgBUhMIxOaM0-6ktQIVrp7iCh2TDwDB"; 
+google_radlinks[4] = google_radlink; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://timesofindia.indiatimes.com/sports%26gl%3DIN%26hl%3Den%26client%3Dca-indiatimes_radlinks_js\x26usg\x3dAFQjCNEZ_Kz1N10RwKfQcwgtUQt7UJghmA";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

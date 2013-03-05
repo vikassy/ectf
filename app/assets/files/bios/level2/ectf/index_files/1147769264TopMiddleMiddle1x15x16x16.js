@@ -1,0 +1,12 @@
+document.write ('<script type="text/javascript"><!--\n');
+document.write ('google_ad_client = "ca-pub-0910144482339723";\n');
+document.write ('/* sify_sportsHP_728x90_bottom */\n');
+document.write ('google_ad_slot = "0521694591";\n');
+document.write ('google_ad_width = 728;\n');
+document.write ('google_ad_height = 90;\n');
+document.write ('google_page_url = "http://www.sify.com/sports/";\n');
+document.write ('//-->\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript"\n');
+document.write ('src="http://pagead2.googlesyndication.com/pagead/show_ads.js">\n');
+document.write ('</script>');

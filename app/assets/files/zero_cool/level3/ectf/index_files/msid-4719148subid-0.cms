@@ -1,0 +1,56 @@
+
+	googletag.defineSlot('/7176/TOI/TOI_Sports/TOI_Sports_Home/TOI_ROS_ATF_SPO_300', [[300, 250], [300, 1050]], 'div-gpt-ad-1322824521615-0')  .setTargeting('L1', '')
+	  .setTargeting('L2', '')
+	  .setTargeting('L3', '')
+	  .setTargeting('H1', '')
+	  .setTargeting('ARC1', '')
+	  .setTargeting('Hyp1', '')
+	  .addService(googletag.pubads());
+	googletag.defineSlot('/7176/TOI/TOI_Sports/TOI_Sports_Home/TOI_ROS_ATF_SPO_728', [[728, 90], [1003, 90]], 'div-gpt-ad-1322824521615-1')  .setTargeting('L1', '')
+	  .setTargeting('L2', '')
+	  .setTargeting('L3', '')
+	  .setTargeting('H1', '')
+	  .setTargeting('ARC1', '')
+	  .setTargeting('Hyp1', '')
+	  .addService(googletag.pubads());
+	googletag.defineSlot('/7176/TOI/TOI_Sports/TOI_Sports_Home/TOI_ROS_BTF_SPO_300', [300, 250], 'div-gpt-ad-1322824521615-3')  .setTargeting('L1', '')
+	  .setTargeting('L2', '')
+	  .setTargeting('L3', '')
+	  .setTargeting('H1', '')
+	  .setTargeting('ARC1', '')
+	  .setTargeting('Hyp1', '')
+	  .addService(googletag.pubads());
+	googletag.defineOutOfPageSlot('/7176/TOI/TOI_Sports/TOI_Sports_Home/TOI_ROS_OP_SPO_Innov1','div-gpt-ad-1322824521615-0-oop1')  .setTargeting('L1', '')
+	  .setTargeting('L2', '')
+	  .setTargeting('L3', '')
+	  .setTargeting('H1', '')
+	  .setTargeting('ARC1', '')
+	  .setTargeting('Hyp1', '')
+	  .addService(googletag.pubads());
+	googletag.defineOutOfPageSlot('/7176/TOI/TOI_Sports/TOI_Sports_Home/TOI_ROS_OP_SPO_Inter','div-gpt-ad-1322824521615-0-oop2')  .setTargeting('L1', '')
+	  .setTargeting('L2', '')
+	  .setTargeting('L3', '')
+	  .setTargeting('H1', '')
+	  .setTargeting('ARC1', '')
+	  .setTargeting('Hyp1', '')
+	  .addService(googletag.pubads());
+	googletag.defineOutOfPageSlot('/7176/TOI/TOI_Sports/TOI_Sports_Home/TOI_ROS_OP_SPO_POP','div-gpt-ad-1322824521615-0-oop3')  .setTargeting('L1', '')
+	  .setTargeting('L2', '')
+	  .setTargeting('L3', '')
+	  .setTargeting('H1', '')
+	  .setTargeting('ARC1', '')
+	  .setTargeting('Hyp1', '')
+	  .addService(googletag.pubads());
+	googletag.defineOutOfPageSlot('/7176/TOI/TOI_Sports/TOI_Sports_Home/TOI_ROS_OP_SPO_Shosh','div-gpt-ad-1322824521615-0-oop4')  .setTargeting('L1', '')
+	  .setTargeting('L2', '')
+	  .setTargeting('L3', '')
+	  .setTargeting('H1', '')
+	  .setTargeting('ARC1', '')
+	  .setTargeting('Hyp1', '')
+	  .addService(googletag.pubads());
+	googletag.pubads().enableSyncRendering();
+	googletag.pubads().setTargeting('article', '');
+	 googletag.pubads().enableSingleRequest();
+	googletag.pubads().collapseEmptyDivs(); googletag.enableServices();
+	
+				

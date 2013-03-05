@@ -1,0 +1,50 @@
+var is_http=false;
+if(document.location.protocol == "http:") {
+	is_http=true;
+}
+var ZAP_id='4612108548658956456';
+var B3_id='Doub0lCK4f4AAE1H';
+var xaxis_30d='';
+var xax_referrer = '%%xax_referrer%%';
+var xax_url = '%%xax_url%%';
+
+var xaxis_userId = '446f7562306c434b3466344141453148';
+var hexToDecimal = parseInt(xaxis_userId, 16);
+var x = hexToDecimal.toString();
+var y = x.substring(1,18);
+var proximic_sample = Math.floor(y * 40); //Sample 2% of urls
+
+if ( proximic_sample == '0' ) {
+	var page_url = encodeURIComponent(xax_url);
+	var resp_url = "http://b3.mookie1.com/2/xaxis/synch/1@x96";
+	var resp_query = "";
+	var meta_data = encodeURIComponent(resp_url + '?' + resp_query);
+
+	(function (a, u, m) {
+		var f = "scr";
+		var e = (a ? ("s=" + a) : "") + (m ? ("&m=" + m) : "") + "&r=" + ((self === top) ? ("other:") : ("iframe:")) + encodeURIComponent(document.referrer) + (u ? ("&url=" + u) : "");
+		var sNew = document.createElement("script");
+		sNew.async = true;
+		sNew.src = 'http://t01.proximic.com/c.js?' + e.replace(/\'/g, "");
+		var s0 = document.getElementsByTagName('script')[0];
+		s0.parentNode.insertBefore(sNew, s0);
+	})("xaxis", ((typeof (page_url) === "undefined") ? "" : page_url), ((typeof (meta_data) === "undefined") ? "" : meta_data));
+}
+
+if(is_http) {
+
+	if (xaxis_30d != '1359748638') {
+
+		// Send Facebook our ID
+		var send_fb=new Image(1,1);
+		send_fb.src='//t.mookie1.com/rsp?dnv=1942481931&rurl=http://www.facebook.com/fr/u.php?p=245899588860679%26m=[MOOKIE]';
+		var send_fb2=new Image(1,1);
+		send_fb2.src='//ib.adnxs.com/getuid?//www.facebook.com/fr/u.php?p=391363987594223&m=$UID';
+	}
+
+	// Set cookie to synch-again in 30 days.
+	var B3d=new Date();
+	var B3m=B3d.getTime();
+	B3d.setTime(B3m+30*24*60*60*1000);
+	document.cookie="xaxis_30d=1359748638;expires="+B3d.toGMTString()+";path=/;domain=.mookie1.com;";
+}

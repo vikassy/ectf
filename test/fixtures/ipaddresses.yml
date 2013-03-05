@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  ip: MyString
+  team_name: MyString
+
+two:
+  ip: MyString
+  team_name: MyString

@@ -1,0 +1,53 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=C47DwMOUTUaqaBOmtigbSkoCAB__M2KkCt7Gsmj2XkKzjeRABIOeF9BIoA1CFytTLBmDl6uWDtA6gAbX2kewDyAEBqAMBqgRqT9ArlP5fP_kkwILInGchssB13MiGfQswdvH7yjOgw7eVMIUjCTJIXi1dV3xs8IDRShH2Qcc1GR6AfeMS1s1Hwx_uIAzBxgDJF8NfDM3Da0AMOxXDkaMEi4bcKvm6hNurRVLlN3LO19aQeIgGAYAHs4nuEw&amp;num=1&amp;cid=5Ghws8SO944FVEzP9Z-BtFhU&amp;sig=AOD64_2iD8bfX4kHeviVLaOQ2kJVKkqhzA&amp;client=ca-bbccom&amp;adurl=http://www.mochahost.com/landing2012/mochahost_2012_1.html"; 
+google_ad.visible_url = "www.MochaHost.com"; 
+google_ad.line1 = "Best Web Hosting 2012"; 
+google_ad.line2 = "$1.95/mo + Free Domain"; 
+google_ad.line3 = "Unlimited Disk Space \x26amp; Bandwidth"; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CZ-kAMOUTUaqaBOmtigbSkoCAB5DI3MgDyPGi_E2Qg4WeCxACIOeF9BIoA1DC0_6hBGDl6uWDtA6gAdjZ3d4DyAEBqAMBqgRnT9ArpKhfPPkkwILInGchssB13MiGfQswdvH7yjOgw7eVMIUjCTJIXi1dV3xs8IDRShH2Qcc1GR6AfeMS1s1Hwx_uIAzBxgDJF8NfDM3DK0AJExRoeFWpinPfLAy5oi6oZbLjt3k1AYgGAYAHkKaiIQ&amp;num=2&amp;cid=5Ghws8SO944FVEzP9Z-BtFhU&amp;sig=AOD64_2zHjWeXT41augch9Q43pYz1vIvNg&amp;client=ca-bbccom&amp;adurl=http://ad.doubleclick.net/clk%3B268145839%3B93985643%3Bg"; 
+google_ad.visible_url = "www.google.com"; 
+google_ad.line1 = "Get the Benefits of Gmail"; 
+google_ad.line2 = "Without giving up your old email"; 
+google_ad.line3 = "It is easy to switch to Gmail Now!"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = {}; 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = ""; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CAJfaMOUTUaqaBOmtigbSkoCAB7OQ1_0E89XyrDn796WeRBADIOeF9BIoA1Db-tzp_f____8BYOXq5YO0DqAB1deQ0wPIAQGpAv_MzrLBF6s-qAMBqgRwT9ArtbVfPfkkwILInGchssB13MiGfQswdvH7yjOgw7eVMIUjCTJIXi1dV3xs8IDRShH2Qcc1GR6AfeMS1s1Hwx_uIAzBxgDJF8NfDM3Da0AMOxXCsaIRMLHmwvoUg9urZVLlMWfLAEBJbNHmVOmhDYgGAYAHk6jvLA&amp;num=3&amp;cid=5Ghws8SO944FVEzP9Z-BtFhU&amp;sig=AOD64_22rgKlrXqPMiRBD_3ucYJgrOAgBg&amp;client=ca-bbccom&amp;adurl=http://www.iproperty.com.sg"; 
+google_ad.visible_url = "iProperty.Com.Sg"; 
+google_ad.line1 = "Singapore - iProperty.com"; 
+google_ad.line2 = "Your Dream Property Awaits, Search"; 
+google_ad.line3 = "Singapore\x26#39;s No. 1 Property Site Now"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "http://www.google.com/url?ct\x3dabg\x26q\x3dhttp://www.bbc.co.uk/bbc.com/faq/ads_by_google.shtml\x26usg\x3dAFQjCNGQLzJUBzcGrnHtvrzROxupHcrkxg";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

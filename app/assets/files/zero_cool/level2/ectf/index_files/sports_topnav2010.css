@@ -1,0 +1,206 @@
+#site-wrapper2010 {
+	width: 984px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 10px;
+	}
+
+#header-wrapper2010 {
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 10px;
+	}
+
+#logo2010 {
+	width: 240px;
+	height: auto;
+	float: left;
+	margin-top: 33px;
+	}
+
+#header-ad2010 {
+	width: 730px;
+	height: 90px;
+	float: right;
+	}
+
+#search-wrapper2010 {
+	width: 982px;
+	height: 44px;
+	float: left;
+	border: 1px solid #b0b0b0;
+	background: url(http://im.sify.com/images/search-bg2010.gif) repeat-x left top;
+	}
+
+#search-inner2010 {
+	width: 100%;
+	height: 44px;
+	float: left;
+	}
+
+.search-radio-field2010 {
+	width: 105px;
+	height: 44px;
+	float: left;
+	margin-right: 20px;
+	}
+
+.radio-button-slot-inner2010 {
+	width: 100%;
+	height: auto;
+	padding-top: 13px;
+	text-align: right;
+	font: normal 12px Arial, Helvetica, sans-serif; color: black;
+	}
+
+.search-input-field2010 {
+	width: 376px;
+	height: 34px;
+	float: left;
+	padding-top: 10px;
+	text-align: left;
+	}
+
+.search-textfield2010 {
+	width: 360px;
+	height: auto;
+	padding: 4px;
+	background: url(http://im.sify.com/images/google2010.gif) no-repeat right white;
+	border: 1px solid #566771;
+	font: normal 12px Arial, Helvetica, sans-serif; color: black;
+	}
+
+.search-button2010 {
+	width: 71px;
+	height: 28px;
+	float: left;
+	margin-top: 8px;
+	}
+
+.sprites2010 {
+	background: url(http://im.sify.com/images/icons2-sprite2010.gif) no-repeat;
+}
+
+.search_gif2010 {
+	height               : 28px;
+	width                : 71px;
+	background-position  : -134px -0px;
+	display: block;
+}
+
+#social_icons2010 {
+	width: 200px;
+	height: auto;
+	float: left;
+	padding-right: 20px;
+	padding-top: 12px;
+	}
+
+.mail-slot2010 {
+	width: 95px;
+	height: auto;
+	float: left;
+	text-align: center;
+	padding-top: 5px;
+	}
+
+#header-menu-wrapper2010 {
+	width: 100%;
+	height: auto;
+	float: left;
+	}
+
+.header-menu2010 {
+	width: 976px;
+	height: 33px;
+	float: left;
+	background: url(http://im.sify.com/images/bg-2010.gif) repeat-x left top;
+	border-left: 1px solid #b0b0b0;
+	border-right: 1px solid #b0b0b0;
+	padding-left: 6px;
+	}
+
+.menu-text2010 {
+	width: auto;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	padding: 0 9px 0 9px;
+	float: left;
+	}
+	
+.menu-text2010 a {
+	font: bold 12px Arial, Helvetica, sans-serif; color: black; text-decoration: none;
+	line-height: 32px;
+	}
+
+.menu-text2010 a:hover {
+	font: bold 12px Arial, Helvetica, sans-serif; color: black; text-decoration: underline;
+	line-height: 32px;
+	}
+
+.divider1 {
+	width: 1px;
+	height: 32px;
+	background-color: #b0b0b0;
+	border-right: 2px solid white;
+	float: left;
+	}
+
+.default-text2010 {
+	width: auto;
+	height: 33px;
+	line-height: 33px;
+	text-align: center;
+	padding: 0 10px 0 10px;
+	float: left;
+	background-color: #97b200;
+	}
+
+.default-text2010 a {
+	font: bold 12px Arial, Helvetica, sans-serif; color: #FFFFFF; text-decoration: none;
+	line-height: 32px;
+	}
+
+.default-text2010 a:hover {
+	font: bold 12px Arial, Helvetica, sans-serif; color: #FFFFFF; text-decoration: underline;
+	line-height: 32px;
+	}
+
+.header-submenu2010 {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	float: left;
+	background: url(http://im.sify.com/images/bg3-sprite2010.gif) repeat-x left -80px;
+	}
+	
+.header-submenu2010 a{
+	font: normal 12px Arial, Helvetica, sans-serif; color: white; text-decoration: none;
+	}
+
+.header-submenu2010 a:hover{
+	font: normal 12px Arial, Helvetica, sans-serif; color: white; text-decoration: underline;
+	}
+
+.arial11ash-b2010 {
+	font: bold 11px Arial, Helvetica, sans-serif; color: #59666f; text-decoration: none; text-align: center;
+	}
+
+.arial16green-b2010 {
+	font: bold 16px Arial, Helvetica, sans-serif; color: #bad104; text-decoration: none;
+	}
+
+.arial12-lghtgrn-sports2010 {
+	font: normal 12px Arial, Helvetica, sans-serif; color: #b5e669; text-decoration: none;
+	}
+	
+.arial11black-n2010 {
+	font: normal 11px Arial, Helvetica, sans-serif; color: black; text-decoration: none;
+	}
+	
+.search-outer-container2010 {
+	width: 640px; height: auto; float: left;
+	}

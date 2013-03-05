@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /qw09282wu2u2.html

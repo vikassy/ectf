@@ -1,0 +1,52 @@
+
+.tooltiptxthead{float:left; width:100%; position:relative;text-align: center;font-size:13px;}
+				.tooltiptxtsyn{width:95%; float:left; position:relative;text-align:left;padding-left:10px;}
+				.tooltiptxtsyn1{color:#999999; font: 12px/19px Arial, Helvetica, sans-serif; padding:1px 5px 10px !important;}
+				.tooltiptxtsyn1a{color: #024E97; font: 12px normal Arial, Helvetica, sans-serif; }
+				.tooltiptxtname{ margin-top:26px !important;font-size:16px;}
+				#toptimespoints:hover  div.badgetooltip{display:block !important;background:url(/photo/12936810.cms) no-repeat;width:270px; height: auto !important;position:absolute; z-index:999 !important;left:-82px;top:7px;}	
+				#toptimespoints div.badgetooltip{display:none;background:url(/photo/12936810.cms) no-repeat;width:270px;height: auto !important;position:absolute; z-index:999 !important;left:-82px;top:7px;}
+				#toptimespoints{position:relative;}
+.topdivsetsep{float:left;color:#E6E6E6;padding:2px 0px 0px 2px;}
+						.toptimespoints{ height: 18px;}
+						.tpbarGold{ background:url("/photo/12530922.cms") no-repeat scroll -13px -120px;line-height:15px; height: 21px;padding-top: 2px;text-align: center;width: 111px;}
+						.tpbarBronze{ background:url("/photo/12530922.cms") no-repeat scroll -13px -20px;line-height:15px; height: 21px;padding-top: 2px;text-align: center;width: 111px;}
+						.tpbarSilver{ background:url("/photo/12530922.cms") no-repeat scroll -13px -70px;line-height:15px; height: 21px;padding-top: 2px;text-align: center;width: 111px;}
+						.tpbarPlatinum{ background:url("/photo/12530922.cms") no-repeat scroll -14px -220px;line-height:15px; height: 21px;padding-top: 2px;text-align: center;width: 111px;}
+						.tpbarDiamond{ background:url("/photo/12530922.cms") no-repeat scroll -14px -170px;line-height:15px; height: 21px;padding-top: 2px;text-align: center;width: 111px;}
+.topdivset{float:left;padding-top:2px;}
+				.topdivsetsep{float:left;color:#E6E6E6;padding:2px 0px 0px 2px;}
+
+#slidebadge1{z-index: 100000;display:none;z-index:10000;border-top: none;bottom: 0;padding: 0;position: fixed;right:432px;bottom:-211px;width:399px;}
+#slidebadge{z-index: 100000;display:none;z-index:10000;border-top: none;bottom: 0;padding: 0;position: fixed;right:461px;bottom:-211px;width:399px;}
+.notificationdiv{}
+.PopUp{	z-index:9999;}
+.slidebadgenw{z-index: 100000;display:none;z-index:10000;border-top: none;bottom: 0;padding: 0;position: fixed;width:399px;}
+a.closeitnow{background: url("/photo/11336081.cms") no-repeat 0 0; cursor: pointer;height: 10px;position: absolute;right: 15px;top: 12px;width: 10px;}
+.topPart{color: #FFFFFF;font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;padding:5px 0px;text-align: left;}
+.midPart{padding-top:6px; }
+.cont{ }
+.badges{width:78px;height:65px; float:left; text-align:center; margin:5px 0 0 }
+.badges img{ margin-bottom:0;width:78px;height:65px;float:left}
+.badges a{font:bold 10px Arial, Helvetica, sans-serif; color:#4f4f4f; text-decoration:none;}
+.badgeimages{ width:78px; height:65px;}
+
+.moreright{float:right;width:43%;position:relative;text-align:right;padding:0px 5px 0 0;}
+				.badgesDtl{text-align:left;font:12px/18px Arial, Helvetica, sans-serif; color:#FFFFFF;}
+.clr{clear:both;}
+.notiline1{padding:0 16px 0 0;}
+				.notiline2{padding:0 16px 1px 0;font-size:11px;line-height:14px;}			
+				.notiline3{font-size:12px;font-weight:bold;padding:5px 0 3px 0;font-style:italic;}
+.More{ text-align:center; border-top:1px solid #c1c1c1; padding-top:3px; width:100%;}
+.More a{ font:bold 12px Arial, Helvetica, sans-serif; color:#ffffff;}
+.moreleft{float:left;width:51%;position:rleative;text-align:left;padding-left:5px;}
+
+.tooltiptxthead{float:left; width:100%; position:relative;text-align: center;font-size:13px;}
+				.tooltiptxtsyn{width:95%; float:left; position:relative;text-align:left;padding-left:10px;}
+				.tooltiptxtsyn1{color:#999999; font: 12px/19px Arial, Helvetica, sans-serif; padding:1px 5px 10px !important;}
+				.tooltiptxtsyn1a{color: #024E97; font: 12px normal Arial, Helvetica, sans-serif; }
+				.tooltiptxtname{ margin-top:14px !important;font-size:16px;}
+				.tooltiptxtname_n1{ margin-top:27px !important;font-size:16px;}
+				#toptimespoints:hover  div.badgetooltip{display:block !important;background:url(/photo/12936810.cms) no-repeat 1px -13px ;width:270px; height: auto !important;position:absolute; z-index:999 !important;left:-82px;top:23px;}	
+				#toptimespoints div.badgetooltip{display:none;background:url(/photo/12936810.cms) no-repeat;width:270px;height: auto !important;position:absolute; z-index:999 !important;left:-82px;top:7px;}
+				#toptimespoints{position:relative;}

@@ -1,0 +1,16 @@
+<div id="ectf">
+<div id="head">Sign In</div><br />
+<div id="subhead">
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+  <div><%= f.label :email %>
+  <%= f.email_field :email %></div>
+
+  <div><%= f.label :password %>
+  <%= f.password_field :password %></div>
+
+  <div><%= f.submit "Sign in" %></div>
+<% end %>
+</div><br />
+</div>
+

@@ -1,0 +1,101 @@
+<div id="ectf" style="margin-left: -500px; width: 940px; top: 60%;" >
+<div id="head">Dashboard
+	<!--
+<%= @time_rem %><br />
+Sec = <%= @sec %>
+level = <%= $level %>
+-->
+
+</div><br />
+<div id="subhead" style="text-align: center;">    
+<%  @user.each do |f| %>
+<%= link_to f.name , "http://"+f.ip+"/ectf"  %><br /><br />
+<% end %>
+<!--
+<%= @time_rem %><br />
+Sec = <%= @sec %>
+level = <%= $level %>
+-->
+
+
+</div><br />
+
+</div>
+<!-- --------------Timer is here--------------- -->
+<div class="wrapper" >
+	TIme left
+        <div class="clock">
+            <!-- Days -->
+            <div class="clock_days">
+                <div class="bgLayer">
+                    <div class="topLayer"></div>
+                    <canvas id="canvas_days" width="188" height="188">
+                    </canvas>
+                </div>
+            </div>
+            <!-- Days -->
+            <!-- Hours -->
+            <div class="clock_hours">
+                <div class="bgLayer">
+                    <div class="topLayer"></div>
+                    <canvas id="canvas_hours" width="188" height="188">
+                    </canvas>
+                    <div class="text">
+                        <p class="val">13</p>
+                        <p class="type_hours">Hours</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Hours -->
+            <!-- Minutes -->
+            <div class="clock_minutes">
+                <div class="bgLayer">
+                    <div class="topLayer"></div>
+                    <canvas id="canvas_minutes" width="188" height="188">
+                    </canvas>
+                    <div class="text">
+                        <p class="val">44</p>
+                        <p class="type_minutes">Minutes</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Minutes -->
+            <!-- Seconds -->
+            <div class="clock_seconds">
+                <div class="bgLayer">
+                    <div class="topLayer"></div>
+                    <canvas id="canvas_seconds" width="188" height="188">
+                    </canvas>
+                    <div class="text">
+                        <p class="val">21</p>
+                        <p class="type_seconds">Seconds</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Seconds -->
+        </div>
+        </div><!--/wrapper-->
+<script type="text/javascript">
+            $(document).ready(function(){
+                JBCountDown({
+                    secondsColor : "#ffdc50",
+                    secondsGlow  : "none",
+
+                    minutesColor : "#9cdb7d",
+                    minutesGlow  : "none",
+
+                    hoursColor   : "#378cff",
+                    hoursGlow    : "none",
+
+                    daysColor    : "#ff6565",
+                    daysGlow     : "none",
+
+                    startDate   : "900",
+                    endDate     : "900",
+                    now         : <%= 900 - @time_rem %>,
+                    seconds     : <%= 60-@sec.to_i %>
+                });
+                $('.clock_days').remove();
+                $('.clock_hours').remove();
+            });
+</script>

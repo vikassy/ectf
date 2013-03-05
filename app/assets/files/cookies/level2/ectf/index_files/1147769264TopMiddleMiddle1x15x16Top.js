@@ -1,0 +1,11 @@
+document.write ('<script type="text/javascript"><!--\n');
+document.write ('google_ad_client = "ca-pub-6112066357956533";\n');
+document.write ('/* others_728x90_top */\n');
+document.write ('google_ad_slot = "5848553479";\n');
+document.write ('google_ad_width = 728;\n');
+document.write ('google_ad_height = 90;\n');
+document.write ('//-->\n');
+document.write ('</script>\n');
+document.write ('<script type="text/javascript"\n');
+document.write ('src="http://pagead2.googlesyndication.com/pagead/show_ads.js">\n');
+document.write ('</script>');

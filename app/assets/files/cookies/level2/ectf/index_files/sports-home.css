@@ -1,0 +1,84 @@
+#wrapper {width: 984px;padding: 0 10px;}
+#top-inner1 {width: 984px; /*height: 90px;*/}
+#sports-logo {width: 215px;height: 70px;float: left;margin-top: 15px;}
+.arial11ash-n {font-family: Arial, Helvetica, sans-serif;font-size: 11px;font-weight: normal;color: #AAAAAA;text-decoration: none;}
+.arial12white-n {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;color: #FFFFFF;text-decoration: none;}
+#ad1 {width: 728px;/*height: 90px;*/float: right;}
+#header-outer {width: 984px;/*height: 58px;*/ float:left; border-bottom: 1px solid #E5E5E5; padding-top:2px;}
+#header-nav1 {width: 984px;/*height: 29px;*/float: left; border-top: 1px solid #93C14B;}
+#header-nav2 {width: 984px;/*height: 28px;*/float: left; background-color: #F5F5F5;text-align: center;line-height: 28px;}
+.arial12black-n {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: normal;color: #373737;text-decoration: none;}
+.arial12ash-b {font-family: Arial, Helvetica, sans-serif;font-size: 12px;font-weight: bold;color: #373737;text-decoration: none;}
+.arial18black {font-family: Arial, Helvetica, sans-serif;font-size: 18px;font-weight: normal;color: #373737;text-decoration: none;}
+#middle-outer {width: 984px;}
+#middle-right {width: 300px;float: right;}
+#middle-left {width: 669px;float: left;}
+#middle-left-column1 {width: 354px;float: left; padding-right:3px;}
+#middle-left-column2 {width: 300px;float: right;}
+#slideshows {width: 300px; border-bottom: 1px solid #dddddd; margin-bottom: 15px; float:left; text-align:left;}
+.heading-text {width: 100%;height: 28px;}
+.heading-text1 {width: 100%;height: 24px;}
+.heading-text-icc {width: 100%;height: 28px;background: url(http://im.sify.com/sports/sports2010/images/bg1.gif) repeat-x;}
+#latestnews {width: 354px;background-color: #F4F4F4;padding-bottom: 23px;margin-bottom: 15px;overflow: hidden;}
+.arial12drk-green {font: bold 12px Arial, Helvetica, sans-serif; color: #2c8559; text-decoration: none;}
+#latestnews-inner {width: 334px; margin: 0 10px; text-align:left;}
+.latestnews-text {width: 334px;text-align: left;margin-bottom: 8px;}
+h1, h2, ul, li {margin: 0px;padding: 0px;}
+ul {list-style-type: square;}
+li {margin-left: 15px;line-height: 21px;}
+#big-imgslot {width: 334px;height: 178px;margin-bottom: 5px;text-align: left;}
+.big-imgslot-cntnt {width: 334px;margin-bottom: 8px;text-align: left;}
+.arial12black-lh-n {font-family: Arial, Helvetica, sans-serif;font-size: 12px;line-height: 18px;font-weight: normal;color: #373737;text-decoration: none;}
+.arial12black-lh-n1 {font-family: Arial, Helvetica, sans-serif;font-size: 12px;line-height: 21px;font-weight: normal;color: #373737;text-decoration: none;}
+.more {width: 100%;height: 22px;line-height: 22px;text-align: right;margin-top: 5px;}
+.more1 {width: 100%;text-align: right;}
+.arial11ash1-b {font-family: Arial, Helvetica, sans-serif;font-size: 11px;font-weight: bold;color: #373737;text-decoration: none;}
+.tahoma11ash {font-family: Tahoma;font-size: 11px;font-weight: bold;color: #373737;text-decoration: none;}
+.more-sports {width: 100%; float: right; text-align:left;}
+#columns-slot {width: 352px;/*height: 298px;*/border: 1px solid #cccccc; margin-bottom: 15px; float:left;}
+.columns-slot-inner {width: 324px;padding: 0 10px; float:left; text-align:left; /*height: 283px;*/}
+.columns-heading {width: 324px; height: 24px; text-align:left;}
+.columns-innerslot {width: 324px; margin-bottom: 10px;}
+.columns-innerslot1 {width: 324px;height: 70px;}
+.img-holder {width: 100px;height: 63px;float: left;}
+.img-holder3 {width: 115px;float: left;}
+.content-holder {width: 200px; height: 70px;float: left; text-align:left;}
+#player-profile {width: 352px;/*height: 262px;*/border: 1px solid #cccccc; float:left;}
+.img-holder1 {width: 100px;height: 90px;float: left;margin-right: 12px;}
+.profile {width: 324px;height: 90px;}
+.img-holder2 {width: 100px;height: 90px;float: left;}
+.profile-slot-inner {width: 324px; padding: 0 10px; float:left; /*height: 246px;*/}
+.slide-imgholder {width: 100%;/*height: 70px;*/margin-bottom: 10px;font: normal 12px Arial, Helvetica, sans-serif; color: black; text-align:left; float:left;}
+.slide-imgholder a{color: black; text-decoration: none;}
+.slide-imgholder img {float: left;margin-right: 15px;margin-top: 3px;}
+.slide-imgholder a img {border: 0;}
+.slide-imgholder span {font: bold 12px Arial, Helvetica, sans-serif; color: black; text-decoration: none;}
+.slide-imgholder span a{color: black; text-decoration: none;}
+.content-holder1 {width: 185px;float: right;}
+.slide-imgholder1 {width: 300px;height: 63px;}
+#vid {width: 100%;/*height: 200px;*/border-bottom: 1px solid #dddddd;margin-bottom: 15px; float:left; text-align:left;}
+#vidnew {width: 100%;/*height: 200px;*/padding-bottom: 5px; float:left; text-align:left;}
+#opinion-slot {width: 300px;/*height: 127px;*/background: url(http://im.sify.com/sports/sports2010/images/op-bg.gif) no-repeat; margin-bottom: 10px;}
+#msg-brd {width: 300px;/*height: 132px;*/background: url(http://im.sify.com/sports/sports2010/images/mb-bg.gif) no-repeat;margin-bottom: 15px;}
+#adslot {width: 300px; border-bottom: 1px solid #dcddde; /*height: 160px;*/ margin-bottom: 15px; text-align:left; float:left;}
+#fact {width: 298px;border: 1px solid #cccccc; float:left; text-align:left; padding-bottom:10px;}
+#fact1 {width: 300px;margin-bottom: 15px;background-color: #fff9d7;padding-bottom: 10px;}
+#poll1 {width: 300px;margin-bottom: 15px;background-color: #edf3f8;padding-bottom: 10px;}
+.ver10ash-b {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;font-weight: bold;color: #CACACA;text-decoration: none;}
+.tahoma11ash1 {font-family: Tahoma;font-size: 10px;font-weight: normal;text-transform: capitalize;color: #8d939b;text-decoration: none;}
+.brd-br {border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #cccccc;border-right-width: 1px;border-right-style: solid;border-right-color: #cccccc;}
+.ad2 {width: 300px;margin-bottom: 15px;}
+#latest-updates {width: 300px;margin-bottom: 15px;}
+#latest-table {width: 298px;background: url(http://im.sify.com/sports/sports2010/images/bg2.gif) repeat-x bottom;border: 1px solid #cccccc;}
+.brd-b {border-bottom-width: 1px;border-bottom-style: solid;border-bottom-color: #cccccc;}
+.brd-r {border-right-width: 1px;border-right-style: solid;border-right-color: #cccccc;}
+.arial11green-1 {font-family: Arial, Helvetica, sans-serif;font-size: 11px;font-weight: bold;color: #d0e350;text-decoration: none;}
+.arial18white-n {font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;color: #FFFFFF;text-decoration: none;}
+.arial11-ash1 {font-family: Arial, Helvetica, sans-serif;font-size: 11px;font-weight: normal;color: #373737;text-decoration: none;}
+.arial11green-b {font-family: Arial, Helvetica, sans-serif;font-size: 11px;font-weight: bold;color: #93c14b;text-decoration: none;}
+#drag {width: 100%;height: auto; float: left;}
+.icc-slot1 {width: 298px;overflow: hidden;border: 1px solid #cccccc;background: url(http://im.sify.com/sports/sports2010/images/bg2.gif) repeat-x bottom;}
+.tab1 {width: 51px;height: 29px;background: url(http://im.sify.com/sports/sports2010/images/tab1.gif) no-repeat;float: left;}
+.tab2 {width: 51px;height: 28px;background: url(http://im.sify.com/sports/sports2010/images/tab2.gif) no-repeat;float: left;border-bottom: 1px solid #cccccc;}
+.arialblack {font-family: Arial, Helvetica, sans-serif;font-size: 20px;font-weight: bold;color: #333333;text-decoration: none;}
+#footer {width: 984px;}

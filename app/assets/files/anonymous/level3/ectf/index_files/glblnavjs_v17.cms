@@ -1,0 +1,645 @@
+
+		var popupStatus = 0;/******** Smooth Popup starts ***********/
+
+				//centering popup
+
+				function FadeObj(objid){
+					this.bg=document.getElementById(objid);
+					this.sh=screen.height;
+					this.sw=screen.width;
+					this.dh=document.body.offsetHeight;
+					this.dw=document.body.offsetWidth;
+					this.w = (this.sw<this.dw)? this.dw:this.sw;
+					this.h = (this.sh<this.dh)? this.dh:this.sh;
+					this.l=false;
+					this.l2=false;
+					this.intrvl=null;
+					this.opacity=0;		
+					this.init=function(){
+						this.bg.style.height=this.h+"px";
+						this.bg.style.width=(this.w-20)+"px";
+						this.bg.style.display='block';
+					}
+					this.animatebg=function(){	
+						if(this.opacity<70){
+								this.l=true;
+								this.opacity+=10;				
+								if (navigator.userAgent.indexOf('MSIE')!=-1)
+									this.bg.style.filter="alpha(opacity:"+this.opacity+")";
+								else
+									this.bg.style.opacity=parseFloat(this.bg.style.opacity)+0.1;
+							}else{
+								this.l=false;
+								window.clearInterval(intv);
+								return;
+							}		
+					};
+
+	
+
+					this.hidebg=function(){
+						if(this.l){
+							return;
+						}else{
+							if(this.opacity>0){
+							this.opacity-=10;	
+								if (navigator.userAgent.indexOf('MSIE')!=-1)
+									this.bg.style.filter="alpha(opacity:"+this.opacity+")";
+								else
+									this.bg.style.opacity=parseFloat(this.bg.style.opacity)-0.1;
+							}else{
+								this.opacity=0;
+								this.bg.style.display='none';
+								clearInterval(intv2);			
+								return;
+							}
+						}		
+					};
+				}
+
+				
+
+
+				var intv,intv2;
+				var fo;
+
+				
+
+				var disableStatus=0;
+				var resultdiv=0;
+
+				function startfade(divcnt)
+				{
+				try
+				{				
+					if(divcnt==1){
+						if(disableStatus!=1)
+						{
+							fo.init();	
+							intv=setInterval("fo.animatebg()",80);
+							document.getElementById("popupContact").style.display="block";
+							disableStatus=1;
+							
+						}
+					}
+					else if(divcnt==2){
+						if(disableStatus!=1)
+						{
+							fo.init();	
+							intv=setInterval("fo.animatebg()",80);			
+							disableStatus=1;
+							
+						}
+					}
+					}
+					catch(ex){					
+					}
+				}
+				function startfadeNew(divcnt,ctr,scnHei)
+				{
+				try
+				{
+				
+					if(divcnt==1){
+						if(disableStatus!=1)
+						{
+							fo.init();	
+							intv=setInterval("fo.animatebg()",80);
+							document.getElementById("popupContact").style.display="block";
+							disableStatus=1;
+							if(ctr=='1'){
+							document.getElementById('backgroundPopup').style.height=scnHei;
+							}
+						}
+					}
+					else if(divcnt==2){
+						if(disableStatus!=1)
+						{
+							fo.init();	
+							intv=setInterval("fo.animatebg()",80);			
+							disableStatus=1;
+							if(ctr=='1'){
+							document.getElementById('backgroundPopup').style.height=scnHei;
+							}
+						}
+					}
+					}
+					catch(ex){
+					
+					}
+				}
+
+				function fadeout()
+				{
+					
+					if(disableStatus!=0)
+					{
+						if(document.getElementById("popupContact").style.display=="block")
+							document.getElementById("popupContact").style.display="none";
+						intv2=setInterval("fo.hidebg()",80);
+						disableStatus=0;
+					}
+				}
+
+				function disablePopup()
+				{
+					try
+					{
+					var chkSrc="";
+					chkSrc=document.getElementById('signupsso').src;					
+					if(chkSrc.indexOf('autologinregister')!=-1)
+					{						
+						Set_Ckie("disableautolg","1",365,"/",".indiatimes.com","");
+					}					
+					Delete_Ckie("ifrmval","/",".indiatimes.com");					
+					fadeout();
+					}
+					catch(ex){					
+					}
+					
+				}
+				var glfollow="";
+				var fnfollow="";
+				var lnfollow="";
+
+				function loadPopupfollow(chk,getpos)
+				{
+					
+					tmpUfNVal1=getCookievaluetwitt('MSCSAuthDetail');
+					if(getCookievaluetwitt('MSCSAuthDetail')!=null)
+					{
+						tmpUfNVal1=tmpUfNVal1.split("~");
+						if(tmpUfNVal1[4].split('=')[1]!=null){
+							tmpUfN1=tmpUfNVal1[4].split('=')[1];
+							if(tmpUfN1=="null"){
+								tmpUfN1="";
+							}		
+						}
+						else {
+						tmpUfN1="";
+						}
+						if(tmpUfNVal1[5].split('=')[1]!=null){
+							tmpUlN1=tmpUfNVal1[5].split('=')[1];	
+							if(tmpUlN1=="null")	{
+								tmpUlN1="";
+							}
+						}
+						else {
+						tmpUlN1="";
+						}
+						tmpUFullN1=tmpUfN1+tmpUlN1;	
+						//get follow details
+						fnfollow=tmpUfN1;
+						lnfollow=tmpUlN1;
+						glfollow=getCookievaluetwitt('MSCSAuthDetails').split('=')[1];
+						if(glfollow.indexOf('@')==-1)
+						{
+						glfollow=glfollow+"@indiatimes.com";
+						}	
+						//get follow details end
+					}
+					
+					if (chk == '9')
+					{
+					document.getElementById("signupsso").src="";
+					scroll(0,0);
+					gllocation=document.getElementById("followlocation"+getpos).innerHTML;
+					glauthor=document.getElementById("followauthor"+getpos).innerHTML;	
+					glcontent=document.getElementById("followcontent"+getpos).innerHTML;													
+					document.getElementById("signupsso").src="/speedfollowtopic.cms?topic="+ glcontent +"&author="+ glauthor + "&location="+ gllocation +"&user="+glfollow+"&firstname="+fnfollow+"&lastname="+lnfollow;	
+					startfade(1);	
+					}
+				}	
+				function loadPopupfollowauthor()
+				{
+					
+					tmpUfNVal1=getCookievaluetwitt('MSCSAuthDetail');
+					if(getCookievaluetwitt('MSCSAuthDetail')!=null)
+					{
+						tmpUfNVal1=tmpUfNVal1.split("~");
+						if(tmpUfNVal1[4].split('=')[1]!=null){
+							tmpUfN1=tmpUfNVal1[4].split('=')[1];
+							if(tmpUfN1=="null"){
+								tmpUfN1="";
+							}		
+						}
+						else {
+						tmpUfN1="";
+						}
+						if(tmpUfNVal1[5].split('=')[1]!=null){
+							tmpUlN1=tmpUfNVal1[5].split('=')[1];	
+							if(tmpUlN1=="null")	{
+								tmpUlN1="";
+							}
+						}
+						else {
+						tmpUlN1="";
+						}
+						tmpUFullN1=tmpUfN1+tmpUlN1;	
+						//get follow details
+						fnfollow=tmpUfN1;
+						lnfollow=tmpUlN1;
+						glfollow=getCookievaluetwitt('MSCSAuthDetails').split('=')[1];
+						if(glfollow.indexOf('@')==-1)
+						{
+						glfollow=glfollow+"@indiatimes.com";
+						}	
+						//get follow details end
+					}
+					
+					
+					document.getElementById("signupsso").src="";
+					scroll(0,0);					
+					glauthor1=document.getElementById("followauthor1").innerHTML;																		
+					document.getElementById("signupsso").src="/followreporter.cms?author="+ glauthor1 + "&user="+glfollow+"&firstname="+fnfollow+"&lastname="+lnfollow;	
+					startfade(1);	
+				}
+				function loadPopupfollowshow()
+				{
+					var authortext1="";
+					tmpUfNVal1=getCookievaluetwitt('MSCSAuthDetail');
+					if(getCookievaluetwitt('MSCSAuthDetail')!=null)
+					{
+						tmpUfNVal1=tmpUfNVal1.split("~");
+						if(tmpUfNVal1[4].split('=')[1]!=null){
+							tmpUfN1=tmpUfNVal1[4].split('=')[1];
+							if(tmpUfN1=="null"){
+								tmpUfN1="";
+							}		
+						}
+						else {
+						tmpUfN1="";
+						}
+						if(tmpUfNVal1[5].split('=')[1]!=null){
+							tmpUlN1=tmpUfNVal1[5].split('=')[1];	
+							if(tmpUlN1=="null")	{
+								tmpUlN1="";
+							}
+						}
+						else {
+						tmpUlN1="";
+						}
+						tmpUFullN1=tmpUfN1+tmpUlN1;	
+						//get follow details
+						fnfollow=tmpUfN1;
+						lnfollow=tmpUlN1;
+						glfollow=getCookievaluetwitt('MSCSAuthDetails').split('=')[1];
+						if(glfollow.indexOf('@')==-1)
+						{
+						glfollow=glfollow+"@indiatimes.com";
+						}	
+						//get follow details end
+					}
+					
+					document.getElementById("signupsso").src="";
+					scroll(0,0);						
+					srcvar="/followtopic.cms?user="+glfollow+"&msid="+navmsid+"&firstname="+fnfollow+"&lastname="+lnfollow;																
+					authortext1=document.getElementById("authortext").innerHTML;
+					if(authortext1!="")
+					{
+					srcvar=srcvar+"&author="+authortext1;
+					}
+					document.getElementById("signupsso").src=srcvar;
+					startfade(1);	
+					
+				}					
+
+				function loadPopup(chk){
+				try
+				{
+				
+					
+					if (chk == '1'){
+					document.getElementById("signupsso").src="/login.cms?newlook=1&relogin=1";
+					startfade(1)		
+					}
+					if (chk == '2'){
+					document.getElementById("signupsso").src="http://timesofindia.indiatimes.com/sign_up.cms";	
+					startfade(1);	
+					}
+					if (chk == '3'){
+					fo=new FadeObj('backgroundPopup');
+					document.getElementById("signupsso").src="/login.cms?newlook=1&signin=1";	
+					startfade(1);	
+					}
+					if (chk == '4'){
+					
+					document.getElementById("signupsso").src="/login.cms?newlook=1";	
+					startfade(1);	
+					}
+					if (chk == '5'){
+					
+					document.getElementById("signupsso").src="http://timesofindia.indiatimes.com/mypreferences1.cms";	
+					startfade(1);	
+					}
+					if (chk == '6'){
+					
+					document.getElementById("signupsso").src="http://timesofindia.indiatimes.com/mypreferences1.cms?arc=1";	
+					startfade(1);	
+					}
+					if (chk == '7'){	
+					document.getElementById("signupsso").src="http://timesofindia.indiatimes.com/stgredirectpagepopup.cms?refresh=1&arc=1";
+					startfade(1);
+					}
+					if (chk == '8'){
+					document.getElementById("signupsso").src="/followlogin.cms?newlook=1";	
+					startfade(1);	
+					}
+					if (chk == '9'){
+					scroll(0,0);
+					document.getElementById("signupsso").src="/follow_login.cms";	
+					startfade(1);	
+					}
+					if (chk == '10'){
+					scroll(0,0);															
+					document.getElementById("signupsso").src="/followtopic.cms?user="+glfollow+"&firstname="+fnfollow+"&lastname="+lnfollow;	
+					startfade(1);	
+					}
+					if (chk == '11'){																				
+					document.getElementById("signupsso").src="/campaignthanks.cms";	
+					startfade(1);	
+					mailertks();
+					}	
+					if (chk == '12'){
+					scroll(0,0);																	
+					document.getElementById("signupsso").src="/autologin.cms";					
+					startfade(1);	
+					}
+					if (chk == '13'){
+					scroll(0,0);																	
+					document.getElementById("signupsso").src="/autologinregister.cms";					
+					startfade(1);	
+					}
+					if (chk == '14'){
+					scroll(0,0);																	
+					document.getElementById("signupsso").src="/login.cms?newlook=1&relogin=1";					
+					startfade(1);	
+					}
+
+					
+				}
+				catch(ex){
+					
+				}
+			}
+
+			function loadPopupNew(chk,schHt){
+				try
+				{
+				
+					
+					if (chk == '1'){
+					document.getElementById("signupsso").src="/login1.cms?newlook=1";
+					startfadeNew(1,0,0);		
+					}
+					if (chk == '2'){
+					document.getElementById("signupsso").src="/sign_up.cms";	
+					startfadeNew(1,0,0);	
+					}
+					if (chk == '3'){
+					fo=new FadeObj('backgroundPopup');
+					document.getElementById("signupsso").src="/login.cms?newlook=1&signin=1";	
+					startfadeNew(1,0,0);	
+					}
+					if (chk == '4'){
+					
+					document.getElementById("signupsso").src="/login.cms?newlook=1";	
+					startfadeNew(1,0,0);	
+					}
+					if (chk == '5'){
+					
+					document.getElementById("signupsso").src="/mypreferences1.cms";	
+					startfadeNew(1,0,0);	
+					}
+					if (chk == '6'){
+					
+					document.getElementById("signupsso").src="/mypreferences1.cms?arc=1";	
+					startfadeNew(1,0,0);	
+					}
+					if (chk == '7'){	
+					document.getElementById("signupsso").src="/stgredirectpagepopup.cms?refresh=1&arc=1";
+					startfadeNew(1,1,schHt);
+					}
+					if (chk == '8'){	
+					document.getElementById("signupsso").src="/stgredirectpagetest.cms?popupenabled=1&arc=1";
+					startfadeNew(1,1,schHt);
+					}
+					if (chk == '9'){	
+					document.getElementById("signupsso").src="/stgredirectpagetest.cms?popupenabled=2&arc=1";
+					startfadeNew(1,1,schHt);
+					}
+					
+				}
+				catch(ex){
+				
+				}
+			}
+
+
+
+function Delete_Ckie(name,path,domain){
+					try{
+					if(Get_Ckie(name)){
+						document.cookie=name+"="+((path)? ";path="+path : "")+((domain)? ";domain="+domain : "")+";expires=Thu, 01-Jan-1970 00:00:01 GMT";
+						}	
+					}
+					catch(ex){
+					}
+}
+
+function Get_Ckie(name){
+					var start=document.cookie.indexOf(name+"=")
+					var len=start+name.length+1
+					if((!start)&&(name !=document.cookie.substring(0,name.length))){
+						return null
+					}
+					if(start==-1)return null;
+					var end=document.cookie.indexOf(";",len)
+					if(end==-1)end=document.cookie.length
+					return unescape(document.cookie.substring(len,end))
+				}	
+
+
+function newadjusthgt(hgt)
+					{
+								
+								if(hgt=='0')
+								{
+									document.getElementById("signupsso").height=340;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='1')
+								{
+									document.getElementById("signupsso").height=340;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='2')
+								{
+									document.getElementById("signupsso").height=340;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='3')
+								{
+									document.getElementById("signupsso").height=380;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='4')
+								{
+									document.getElementById("signupsso").height=380;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='5')
+								{
+									document.getElementById("signupsso").height=420;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='6')
+								{
+									document.getElementById("signupsso").height=420;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='7')
+								{
+									document.getElementById("signupsso").height=460;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='8')
+								{
+									document.getElementById("signupsso").height=460;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='9')
+								{
+									document.getElementById("signupsso").height=500;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else if(hgt=='10')
+								{
+									document.getElementById("signupsso").height=500;
+									document.getElementById("clsimg").style.display="inline";
+								}
+								else
+								{
+									document.getElementById("signupsso").height=255;
+									document.getElementById("clsimg").style.display="inline";
+								}
+						
+						
+					}
+				function adjusthgt(hgt)
+									{
+									try
+									{
+									
+									if(hgt=='3')
+									{
+									document.getElementById("signupsso").height=510;
+									document.getElementById("signupsso").width=580;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='5')
+									{
+									document.getElementById("signupsso").height=510;
+									document.getElementById("signupsso").width=528;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='1')
+									{
+									//document.getElementById("signupsso").height=528;
+									document.getElementById("signupsso").height=364;
+									document.getElementById("signupsso").width=540;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='6')
+									{
+									document.getElementById("signupsso").height=452;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='4')
+									{
+									document.getElementById("signupsso").height=255;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='7')
+									{
+									document.getElementById("signupsso").height=480;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='8')
+									{
+								
+									document.getElementById("mainblkdiv").style.width="580px";
+									document.getElementById("signupsso").width=540;
+									document.getElementById("clsimg").style.display="inline";						
+								
+									}
+									else if(hgt=='9')
+									{
+									//document.getElementById("signupsso").height=555;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='10')
+									{
+									document.getElementById("signupsso").height=460;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									else if(hgt=='12')
+									{
+									document.getElementById("signupsso").height=105;
+									document.getElementById("signupsso").width=430;
+									document.getElementById("mainblkdiv").style.width="430px";
+									document.getElementById("clsimg").style.display="none";
+									}
+									else if(hgt=='13')
+									{
+									document.getElementById("signupsso").height=145;
+									document.getElementById("clsimg").style.display="none";
+									}
+									else if(hgt=='14')
+									{
+									document.getElementById("signupsso").height=172;
+									document.getElementById("clsimg").style.display="none";
+									}
+									else if(hgt=='15')
+									{
+									document.getElementById("signupsso").height=496;
+								
+									}
+									else if(hgt=='16')
+									{
+									document.getElementById("signupsso").height=530;
+								
+									}
+									else if(hgt=='20')
+									{
+									document.getElementById("signupsso").height=255;
+								
+									}
+									else if(hgt=='21')
+									{
+									document.getElementById("signupsso").height=500;								
+									}
+									else if(hgt=='22')
+									{
+									document.getElementById("signupsso").height=150;								
+									}
+									else if(hgt=='23')
+									{									
+										document.getElementById("signupsso").height=560;
+										document.getElementById("signupsso").width=540;
+										document.getElementById("clsimg").style.display="inline";
+									}
+									else
+									{
+									document.getElementById("signupsso").height=200;
+									document.getElementById("clsimg").style.display="inline";
+									}
+									}
+									catch(ex){
+									}
+									}
+
+/********** Smooth popup ends  ************/
+
+                    
+		
