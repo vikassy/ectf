@@ -2,7 +2,7 @@ class DashboardController < ApplicationController
   before_filter :authenticate_user!  
   def index
     @title = "Dashboard"
-    const_time = 500 #15 mins = 15*60=900sec
+    const_time = $time #15 mins = 15*60=900sec
     # @clock = @time_past/const_time
     # $level = 0
     @time_rem = const_time - (Time.now - $time).to_i
